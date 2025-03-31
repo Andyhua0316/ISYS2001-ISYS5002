@@ -1,0 +1,210 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPRp1bld0mJ3g4KYaXMZmzG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Andyhua0316/ISYS2001-ISYS5002/blob/main/Recap%20Practice%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "_8kFAMsLkc0u",
+        "outputId": "4a6903b2-2c06-4401-c601-927558bf5a33"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Hello World\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hi, \\nHow are u?\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "dy-IGhc6kleM",
+        "outputId": "0acb71f9-a18c-42e3-e6d6-3fecc6c6f36f"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hi, \n",
+            "How are u?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('''halo\n",
+        "i am andy\n",
+        "how r u''')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "4H8Iej3rlfH6",
+        "outputId": "da156811-9870-4876-d65c-d0528ce32b81"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "halo\n",
+            "i am andy\n",
+            "how r u\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Welcome to Chatbot! type 'bye' to exit\")\n",
+        "\n",
+        "while True:\n",
+        "\n",
+        "  user_input = input(\"You:\").lower()\n",
+        "  if user_input == \"hello!\":\n",
+        "    print(\"Bot: Hai there, how can i help u?\")\n",
+        "  elif user_input == \"what is ur name?\":\n",
+        "    print(\"Bot: i am AI.\")\n",
+        "  elif user_input == \"bye\":\n",
+        "    print(\"Bot:Bye!\")\n",
+        "    break\n",
+        "  else:\n",
+        "    print(\"sry , i not understand\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "Kn_J4Cv3lq9C",
+        "outputId": "d98523a0-6532-42da-b0d8-2b6bf0303363"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Welcome to Chatbot! type 'bye' to exit\n",
+            "You:hello!\n",
+            "Bot: Hai there, how can i help u?\n",
+            "You:what is ur name\n",
+            "sry , i not understand\n",
+            "You:what is ur name?\n",
+            "Bot: i am AI.\n",
+            "You:bye\n",
+            "Bot:Bye!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "user_name = input(\"What is ur name?\")\n",
+        "print(\"Name:\", user_name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "RWtz-WtjqcTp",
+        "outputId": "efac70b9-1ca8-451d-f65f-5b6833179e61"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is ur name?andy\n",
+            "Name: andy\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"what is ur name?\")\n",
+        "colour = input(\"what is ur fav coulour\")\n",
+        "movie = input(\"what is ur fav movie\")\n",
+        "\n",
+        "print(\"Your name is\" + name + \",and ur fav colour is\" + colour + \",and ur fav movie is\" + movie\n",
+        "\n",
+        "    +\".\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qk-qAJOitbEj",
+        "outputId": "d407b370-768a-4269-a398-cb2b62e18e86"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "what is ur name?andy\n",
+            "what is ur fav coulourblack\n",
+            "what is ur fav movieabc\n",
+            "Your name isandy,and ur fav colour isblack,and ur fav movie isabc.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
